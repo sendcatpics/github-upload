@@ -1,6 +1,10 @@
+#Initiate options
 newf=""
 options = ["always", "busy", "offline", "no-answer"]
+#Print instructions
 print("This program relies on having your text file in the same directory as this file. Also, any numbers must be in E.164 format and on separate lines.")
+
+#Prompt for input
 fileStr=input("Enter the name of your text file: ")
 
 #Print forwarding options
@@ -15,6 +19,7 @@ if forwardStr in range (1,4):
     forwardStr=options[forwardStr-1]
 else:
     print("Invalid option")
+    break
 numberStr=input("Enter the forwarding number: ")
 
 #Consturct String
